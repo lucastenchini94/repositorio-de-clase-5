@@ -1,6 +1,6 @@
 const botonSumar = document.querySelector("#tiempo-total")
 let segundosTotales = Number(0)
-
+const formulario = document.querySelector("#formulario")
 
 botonSumar.onclick = function(){
     const textoResultado = document.querySelector("strong")
@@ -19,7 +19,7 @@ botonSumar.onclick = function(){
     textoResultado.innerText = ("el tiempo total es de "+totalHoras+" horas "+totalMinutos+" minutos "+totalSegundosFinales+" segundos")
 
     
-
+    formulario.reset();
 
 
 
